@@ -1,0 +1,62 @@
+{
+  "name": "curecart/client",
+  "description": "SurCart API Client",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "surecart",
+    "api",
+    "client"
+  ],
+  "authors": [
+    {
+      "name": "Sibin Grašič",
+      "email": "sibin@epicwpsolutions.com",
+      "homepage": "https://sib.ing",
+      "role": "Developer"
+    },
+    {
+      "name": " Robbert Vermeulen",
+      "email": "robbert@epicwpsolutions.com",
+      "homepage": "https://epicwpsolutions.com"
+    }
+  ],
+  "homepage": "https://epicwpsolutions.com",
+  "support": {
+    "email": "helpdesk@epicwpsolutions.com",
+    "issues": "https://github.com/epicwp/surecart-client/issues"
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-json": "*",
+    "php-http/client-common": "^2.3",
+    "php-http/discovery": "^1.12",
+    "php-http/httplug": "^2.2",
+    "psr/http-client-implementation": "^1.0",
+    "psr/http-factory": "^1.1",
+    "psr/http-message": "^1.0 || ^2.0"
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "^7.8",
+    "guzzlehttp/psr7": "^2.0",
+    "oblak/wordpress-coding-standard": "^1.1",
+    "php-http/message": "^1.0",
+    "phpstan/extension-installer": "^1.3",
+    "phpstan/phpstan": "^1.10",
+    "symfony/var-dumper": "^6.4"
+  },
+  "minimum-stability": "beta",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "SureCart\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "php-http/discovery": false,
+      "phpstan/extension-installer": true
+    }
+  }
+}
