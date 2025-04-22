@@ -1,6 +1,6 @@
 {
-  "name": "curecart/client",
-  "description": "SurCart API Client",
+  "name": "surecart/client",
+  "description": "SureCart API Client",
   "license": "MIT",
   "type": "library",
   "keywords": [
