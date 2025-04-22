@@ -22,6 +22,10 @@ abstract class BaseLicense extends BaseApi
      *   variant?: string,
      *   created_at?: int,
      *   updated_at?: int,
+     * }|array{
+     *   http_status: string,
+     *   code: string,
+     *   message: string,
      * }
      */
     public function find(string $id): array
