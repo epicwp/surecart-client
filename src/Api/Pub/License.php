@@ -11,9 +11,9 @@ class License extends BaseLicense
         return '/public/licenses/%s';
     }
 
-    public function find(string $id): array
+    public function show(string $id): array
     {
-        return parent::find($id);
+        return parent::show($id);
     }
 
     /**

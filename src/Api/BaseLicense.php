@@ -28,7 +28,7 @@ abstract class BaseLicense extends BaseApi
      *   message: string,
      * }
      */
-    public function find(string $id): array
+    public function show(string $id): array
     {
         return $this->get($this->buildPath($id));
     }
