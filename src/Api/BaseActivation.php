@@ -23,6 +23,19 @@ abstract class BaseActivation extends BaseApi
      *   license?: string,
      *   created_at: int,
      *   updated_at?: int,
+     *   fingerprint: string,
+     * }|array{
+     *   http_status: string,
+     *   type: string,
+     *   code: string,
+     *   message: string,
+     *   validation_errors?: array<array{
+     *     attribute: string,
+     *     type: string,
+     *     code: string,
+     *     options: array<string,mixed>,
+     *     message: string,
+     *   }>
      * }
      */
     public function show(string $id): array
@@ -44,6 +57,7 @@ abstract class BaseActivation extends BaseApi
      *   license?: string,
      *   created_at: int,
      *   updated_at?: int,
+     *   fingerprint: string,
      * }|array{
      *   http_status: string,
      *   type: string,
